@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join PREMIUM FOLDERS HUB on Telegram for exclusive premium folders, daily updates, and instant support. Connect with our thriving community today.">
+    <meta name="keywords" content="PREMIUM FOLDERS HUB, Telegram community, premium folders, join telegram, exclusive content">
+    <meta name="author" content="PREMIUM FOLDERS HUB">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourdomain.com/">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/favicon.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:title" content="Join PREMIUM FOLDERS HUB on Telegram">
+    <meta property="og:description" content="Join PREMIUM FOLDERS HUB for exclusive premium folders, daily updates, and a thriving community.">
+    <meta property="og:image" content="https://yourdomain.com/assets/og-image.jpg">
+    <meta property="og:site_name" content="PREMIUM FOLDERS HUB">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://yourdomain.com/">
+    <meta name="twitter:title" content="Join PREMIUM FOLDERS HUB on Telegram">
+    <meta name="twitter:description" content="Join PREMIUM FOLDERS HUB for exclusive premium folders, daily updates, and a thriving community.">
+    <meta name="twitter:image" content="https://yourdomain.com/assets/og-image.jpg">
+    <meta name="theme-color" content="#0B0F1A">
+    <title>PREMIUM FOLDERS HUB | Join Our Telegram Community</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        telegram: {
+                            50: '#E8F4FD', 100: '#C5E4F9', 200: '#9DD0F4', 300: '#6DB9EE',
+                            400: '#4AA3E6', 500: '#2AABEE', 600: '#229ED9', 700: '#1C8BC0',
+                            800: '#1774A2', 900: '#125B80',
+                        },
+                        dark: {
+                            50: '#F0F1F5', 100: '#D9DBE5', 200: '#B3B7CB', 300: '#8D93B1',
+                            400: '#676F97', 500: '#414B7D', 600: '#2B3563', 700: '#1A2049',
+                            800: '#0F1530', 900: '#0B0F1A',
+                        }
+                    },
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-delayed': 'float 6s ease-in-out 2s infinite',
+                        'float-slow': 'float 8s ease-in-out 1s infinite',
+                        'pulse-glow': 'pulse-glow 2s ease-in-out infinite',
+                        'slide-up': 'slideUp 0.6s ease-out forwards',
+                        'fade-in': 'fadeIn 0.8s ease-out forwards',
+                        'scale-in': 'scaleIn 0.5s ease-out forwards',
+                    },
+                    keyframes: {
+                        float: { '0%, 100%': { transform: 'translateY(0px)' }, '50%': { transform: 'translateY(-20px)' } },
+                        'pulse-glow': { '0%, 100%': { boxShadow: '0 0 20px rgba(42, 171, 238, 0.3)' }, '50%': { boxShadow: '0 0 40px rgba(42, 171, 238, 0.6)' } },
+                        slideUp: { '0%': { opacity: '0', transform: 'translateY(40px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
+                        scaleIn: { '0%': { opacity: '0', transform: 'scale(0.9)' }, '100%': { opacity: '1', transform: 'scale(1)' } }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark-900 text-white font-sans antialiased overflow-x-hidden">
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-telegram-500 to-telegram-300 z-50 transition-all duration-100" style="width: 0%"></div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="fixed inset-0 bg-dark-900 z-[100] flex items-center justify-center transition-opacity duration-500">
+        <div class="flex flex-col items-center gap-4">
+            <svg class="w-16 h-16 animate-spin" viewBox="0 0 24 24" fill="none">
+                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="#2AABEE" stroke-width="4"></circle>
+                <path class="opacity-75" fill="#2AABEE" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <p class="text-telegram-400 text-sm font-medium animate-pulse">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 md:h-20">
+                <a href="#" class="flex items-center gap-2 group">
+                    <svg class="w-8 h-8 text-telegram-500 transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.41-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                    </svg>
+                    <span class="font-bold text-lg tracking-tight">PREMIUM FOLDERS HUB</span>
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#features" class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Features</a>
+                    <a href="#benefits" class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Benefits</a>
+                    <a href="#testimonials" class="text-sm text-gray-400 hover:text-white transition-colors duration-200">Reviews</a>
+                    <a href="#faq" class="text-sm text-gray-400 hover:text-white transition-colors duration-200">FAQ</a>
+                    <a href="https://t.me/Love_O_P" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 bg-telegram-500 hover:bg-telegram-600 text-white text-sm font-semibold rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-telegram-500/30">
+                        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.41-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                        Join Now
+                    </a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-white/10 transition-colors" aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-dark-800/95 backdrop-blur-xl border-t border-white/5">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#features" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Features</a>
+                <a href="#benefits" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Benefits</a>
+                <a href="#testimonials" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Reviews</a>
+                <a href="#faq" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">FAQ</a>
+                <a href="https://t.me/Love_O_P" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-sm font-semibold text-telegram-400 hover:text-telegram-300 transition-colors">Join Telegram</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-telegram-500/20 rounded-full blur-[100px] animate-float"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-telegram-600/15 rounded-full blur-[80px] animate-float-delayed"></div>
+            <div class="absolute top-1/2 left-1/2 w-64 h-64 bg-telegram-400/10 rounded-full blur-[60px] animate-float-slow"></div>
+            <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')"></div>
+        </div>
+        <div class="absolute inset-0 pointer-events-none overflow-hidden">
+            <svg class="absolute top-20 left-[10%] w-8 h-8 text-telegram-500/30 animate-float" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.41-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            <svg class="absolute top-40 right-[15%] w-6 h-6 text-telegram-400/20 animate-float-delayed" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.41-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+            <svg class="absolute bottom-32 left-[20%] w-10 h-10 text-telegram-600/20 animate-float-slow" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.41-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-telegram-500/10 border border-telegram-500/20 mb-8 animate-fade-in">
+                <span class="w-2 h-2 rounded-full bg-telegram-400 animate-pulse"></span>
+                <span class="text-telegram-300 text-sm font-medium">Join 10,000+ Members</span>
+            </div>
+
+            <div class="mb-8 animate-scale-in" style="animation-delay: 0.2s">
+                <div class="inline-flex items-center justify-center w-24 h-24 rounded-3xl bg-gradient-to-br from-telegram-500 to-telegram-700 shadow-2xl shadow-telegram-500/30 animate-pulse-glow">
+                    <svg class="w-14 h-14 text-white" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.41-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                </div>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 animate-slide-up" style="animation-delay: 0.3s">
+                <span class="bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent">Join Our</span><br>
+                <span class="bg-gradient-to-r from-telegram-400 via-telegram-500 to-telegram-300 bg-clip-text text-transparent">Premium Community</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed animate-slide-up" style="animation-delay: 0.5s">
+                Get exclusive premium folders, daily updates, and connect with like-minded members. Everything you need, delivered directly to your Telegram.
+            </p>
+
+            <div class="animate-slide-up" style="animation-delay: 0.7s">
+                <a href="https://t.me/Love_O_P" target="_blank" rel="noopener noreferrer" class="cta-button group inline-flex items-center gap-3 px-8 py-4 sm:px-10 sm:py-5 bg-gradient-to-r from-telegram-500 to-telegram-600 hover:from-telegram-400 hover:to-telegram-500 text-white text-lg font-bold rounded-2xl shadow-2xl shadow-telegram-500/30 transition-all duration-300 hover:scale-105 hover:shadow-telegram-500/50 relative overflow-hidden">
+                    <svg class="w-6 h-6 transition-transform duration-300 group-hover:rotate-12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.41-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                    Join Telegram Now
+                    <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                </a>
+            </div>
+
+            <div class="mt-6 flex items-center justify-center gap-2 text-sm text-gray-500 animate-fade-in" style="animation-delay: 0.9s">
+                <svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                <span>100% Free & Secure. No Spam. Instant Access.</span>
+            </div>
+
+            <div class="mt-12 flex items-center justify-center gap-4 animate-fade-in" style="animation-delay: 1.1s">
+                <div class="flex -space-x-3">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 border-2 border-dark-900 flex items-center justify-center text-xs font-bold">JD</div>
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 border-2 border-dark-900 flex items-center justify-center text-xs font-bold">MK</div>
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-green-400 to-emerald-400 border-2 border-dark-900 flex items-center justify-center text-xs font-bold">AS</div>
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-red-400 border-2 border-dark-900 flex items-center justify-center text-xs font-bold">RL</div>
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-yellow-400 to-amber-400 border-2 border-dark-900 flex items-center justify-center text-xs font-bold">+</div>
+                </div>
+                <div class="text-left">
+                    <p class="text-sm font-semibold text-white">10,000+ Members</p>
+                    <p class="text-xs text-gray-500">Already joined this week</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="relative py-24 sm:py-32 overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-telegram-500/5 rounded-full blur-[100px]"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-reveal">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-telegram-500/10 text-telegram-400 text-sm font-semibold mb-4">Why Join Us</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">Premium Folders & More</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Join thousands accessing exclusive premium folders, resources, and a thriving community.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="feature-card group scroll-reveal p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-telegram-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-telegram-500/10">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-telegram-500 to-telegram-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Daily Updates</h3>
+                    <p class="text-gray-400 leading-relaxed">Stay ahead with fresh, curated content delivered to your inbox every single day. Never miss important updates.</p>
+                </div>
+                <div class="feature-card group scroll-reveal p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-telegram-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-telegram-500/10">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-telegram-500 to-telegram-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Exclusive Content</h3>
+                    <p class="text-gray-400 leading-relaxed">Access premium resources, guides, and insider information that you will not find anywhere else online.</p>
+                </div>
+                <div class="feature-card group scroll-reveal p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-telegram-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-telegram-500/10">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-telegram-500 to-telegram-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Fast Support</h3>
+                    <p class="text-gray-400 leading-relaxed">Get your questions answered within minutes. Our dedicated team is always ready to help you succeed.</p>
+                </div>
+                <div class="feature-card group scroll-reveal p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-telegram-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-telegram-500/10">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-telegram-500 to-telegram-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Premium Community</h3>
+                    <p class="text-gray-400 leading-relaxed">Connect with professionals, entrepreneurs, and experts who share your passion and drive for excellence.</p>
+                </div>
+                <div class="feature-card group scroll-reveal p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-telegram-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-telegram-500/10">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-telegram-500 to-telegram-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Instant Notifications</h3>
+                    <p class="text-gray-400 leading-relaxed">Receive real-time alerts for important announcements, opportunities, and breaking news in your field.</p>
+                </div>
+                <div class="feature-card group scroll-reveal p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:border-telegram-500/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-telegram-500/10">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-telegram-500 to-telegram-700 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">100% Free to Join</h3>
+                    <p class="text-gray-400 leading-relaxed">No hidden fees, no credit card required. Join our community today and start benefiting immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="relative py-24 sm:py-32 overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute bottom-0 right-0 w-[600px] h-[600px] bg-telegram-600/5 rounded-full blur-[120px]"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="scroll-reveal">
+                    <span class="inline-block px-4 py-1.5 rounded-full bg-telegram-500/10 text-telegram-400 text-sm font-semibold mb-4">Benefits</span>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                        Why Thousands Choose<br><span class="text-telegram-400">Our Community</span>
+                    </h2>
+                    <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                        We have created a space where professionals thrive. Our community is built on trust, value, and genuine connections that help you grow.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-telegram-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-5 h-5 text-telegram-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-1">Curated Content</h4>
+                                <p class="text-gray-400 text-sm">Every piece of content is hand-picked and verified for quality and relevance.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-telegram-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-5 h-5 text-telegram-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-1">Networking Opportunities</h4>
+                                <p class="text-gray-400 text-sm">Connect with industry leaders and build relationships that matter.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-telegram-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-5 h-5 text-telegram-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-1">Zero Distractions</h4>
+                                <p class="text-gray-400 text-sm">A focused environment with no spam, no ads, and no noise. Just value.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-telegram-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <svg class="w-5 h-5 text-telegram-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold mb-1">Mobile First</h4>
+                                <p class="text-gray-400 text-sm">Access everything on the go. Telegram works seamlessly on all devices.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <a href="https://t.me/Love_O_P" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 bg-telegram-500 hover:bg-telegram-600 text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-telegram-500/30">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.41-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 0 0-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/></svg>
+                            Start Your Journey
+                        </a>
+                    </div>
+                </div>
+                <div class="scroll-reveal relative">
+                    <div class="relative">
+                        <div class="relative p-8 rounded-3xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/10 shadow-2xl">
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-telegram-400 to-telegram-600 flex items-center justify-center text-white text-sm font-bold flex-shrink-0">A</div>
+                                    <div class="bg-white/10 rounded-2xl rounded-tl-sm px-4 py-3 max-w-[80%]">
+                                        <p class="text-sm text-gray-300">Welcome to the community! Here is your exclusive guide.</p>
+                                        <span class="text-xs text-gray-500 mt-1 block">10:30 AM</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-white text-sm font-bold flex-shrink-0">Y</div>
+                                    <div class="bg-white/10 rounded-2xl rounded-tl-sm px-4 py-3 max-w-[80%]">
+                                        <p class="text-sm text-gray-300">Thanks! The content here is amazing. Already learned so much.</p>
+                                        <span class="text-xs text-gray-500 mt-1 block">10:32 AM</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-br from-telegram-400 to-telegram-600 flex items-center justify-center text-white text-sm font-bold flex-shrink-0">A</div>
+                                    <div class="bg-white/10 rounded-2xl rounded-tl-sm px-4 py-3 max-w-[80%]">
+                                        <p class="text-sm text-gray-300">Glad to hear that! New updates dropping tomorrow at 9 AM.</p>
+                                        <span class="text-xs text-gray-500 mt-1 block">10:35 AM</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-2 pl-14">
+                                    <div class="flex gap-1">
+                                        <div class="w-2 h-2 rounded-full bg-telegram-400 animate-bounce"></div>
+                                        <div class="w-2 h-2 rounded-full bg-telegram-400 animate-bounce" style="animation-delay: 0.1s"></div>
+                                        <div class="w-2 h-2 rounded-full bg-telegram-400 animate-bounce" style="animation-delay: 0.2s"></div>
+                                    </div>
+                                    <span class="text-xs text-gray-500">Admin is typing...</span>
+                                </div>
+                            </div>
+                            <div class="absolute -top-4 -right-4 w-20 h-20 bg-telegram-500/20 rounded-full blur-xl"></div>
+                            <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-telegram-600/20 rounded-full blur-xl"></div>
+                        </div>
+                        <div class="absolute -top-6 -right-6 bg-gradient-to-r from-green-400 to-emerald-500 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg shadow-green-500/30 animate-float">
+                            <span class="flex items-center gap-1">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                                Verified
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="relative py-24 sm:py-32 overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[400px] bg-telegram-500/5 rounded-full blur-[100px]"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-reveal">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-telegram-500/10 text-telegram-400 text-sm font-semibold mb-4">Community Stats</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">Numbers That Speak</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Our community is growing every day. Here is what we have achieved together.</p>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="stat-card scroll-reveal p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 text-center hover:border-telegram-500/30 transition-all duration-500 hover:-translate-y-2">
+                    <div class="w-14 h-14 mx-auto rounded-xl bg-gradient-to-br from-telegram-500 to-telegram-700 flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    </div>
+                    <div class="text-4xl sm:text-5xl font-extrabold text-white mb-2"><span class="counter" data-target="10000">0</span>+</div>
+                    <p class="text-gray-400 font-medium">Active Members</p>
+                </div>
+                <div class="stat-card scroll-reveal p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 text-center hover:border-telegram-500/30 transition-all duration-500 hover:-translate-y-2">
+                    <div class="w-14 h-14 mx-auto rounded-xl bg-gradient-to-br from-telegram-500 to-telegram-700 flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
+                    </div>
+                    <div class="text-4xl sm:text-5xl font-extrabold text-white mb-2"><span class="counter" data-target="50">0</span>+</div>
+                    <p class="text-gray-400 font-medium">Daily Posts</p>
+                </div>
+                <div class="stat-card scroll-reveal p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 text-center hover:border-telegram-500/30 transition-all duration-500 hover:-translate-y-2">
+                    <div class="w-14 h-14 mx-auto rounded-xl bg-gradient-to-br from-telegram-500 to-telegram-700 flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <div class="text-4xl sm:text-5xl font-extrabold text-white mb-2"><span class="counter" data-target="98">0</span>%</div>
+                    <p class="text-gray-400 font-medium">Satisfaction Rate</p>
+                </div>
+                <div class="stat-card scroll-reveal p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 text-center hover:border-telegram-500/30 transition-all duration-500 hover:-translate-y-2">
+                    <div class="w-14 h-14 mx-auto rounded-xl bg-gradient-to-br from-telegram-500 to-telegram-700 flex items-center justify-center mb-4">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <div class="text-4xl sm:text-5xl font-extrabold text-white mb-2"><span class="counter" data-target="24">0</span>/7</div>
+                    <p class="text-gray-400 font-medium">Active Community</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="relative py-24 sm:py-32 overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-telegram-500/5 rounded-full blur-[100px]"></div>
+            <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-telegram-600/5 rounded-full blur-[80px]"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 scroll-reveal">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-telegram-500/10 text-telegram-400 text-sm font-semibold mb-4">Testimonials</span>
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">What Members Say</h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">Do not just take our word for it. Here is what our community members have to say.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="testimonial-card scroll-reveal p-8 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 hover:border-telegram-500/30 transition-all duration-500 hover:-translate-y-2 relative">
+                    <svg class="absolute top-6 right-6 w-10 h-10 text-telegram-500/20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6">"This community has completely transformed how I stay informed. The daily updates are incredibly valuable and the networking opportunities are unmatched."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-cyan-400 flex items-center justify-center text-white font-bold">JD</div>
+                        <div><p class="text-white font-semibold">James Davidson</p><p class="text-gray-500 text-sm">Marketing Director</p></div>
+                    </div>
+                </div>
+                <div class="testimonial-card scroll-reveal p-8 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 hover:border-telegram-500/30 transition-all duration-500 hover:-translate-y-2 relative">
+                    <svg class="absolute top-6 right-6 w-10 h-10 text-telegram-500/20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6">"The exclusive content alone is worth joining for. I have learned more in two weeks here than in months of searching elsewhere. Truly a game-changer."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 flex items-center justify-center text-white font-bold">SK</div>
+                        <div><p class="text-white font-semibold">Sarah Kim</p><p class="text-gray-500 text-sm">Entrepreneur</p></div>
+                    </div>
+                </div>
+                <div class="testimonial-card scroll-reveal p-8 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-sm border border-white/10 hover:border-telegram-500/30 transition-all duration-500 hover:-translate-y-2 relative">
+                    <svg class="absolute top-6 right-6 w-10 h-10 text-telegram-500/20" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                    <div class="flex gap-1 mb-4">
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed mb-6">"Fast support, genuine community, and zero spam. This is exactly what I was looking for. I recommend it to everyone in my network."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 to-emerald-400 flex items-center justify-center text-white font-bold">MR</div>
+                        <div><p class="text-white font-semibold">Michael Roberts</p><p class="text-gray-500 text-sm">Software Engineer</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
